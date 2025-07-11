@@ -20,29 +20,14 @@ A modern, full-featured web trading platform for simulated stock trading, portfo
 
 ---
 
-## 📸 Screenshots
 
-### Login & Registration
-![Login](screenshots/login.png) ![Register](screenshots/register.png)
 
-### Dashboard & Home
-![Dashboard](screenshots/dashboard.png) ![Home](screenshots/home.png)
-
-### Trading & Portfolio
-![Stocks](screenshots/stocks.png) ![Stock Info](screenshots/stock%20info.png) ![Portfolio](screenshots/portfolio.png)
-
-### Wallet & Transactions
-![Wallet](screenshots/wallet.png) ![Transactions](screenshots/transactions.png)
-
-### Profile & Admin
-![Profile Settings](screenshots/profile%20settings.png)
-![Admin Dashboard](screenshots/admin%20dashboard.png) ![Manage User](screenshots/manage%20user.png) ![Add Stocks](screenshots/add%20stocks.png) ![Manage Stocks](screenshots/manage%20stocks.png)
 
 ---
 
 ## 🛠️ Technology Stack
 
-- **Frontend**: HTML, CSS (custom + admin.css), JavaScript, EJS templates
+- **Frontend**: HTML, CSS , JavaScript, EJS templates
 - **Backend**: Node.js, Express.js
 - **Database**: MySQL (schema in `db/schema.sql`)
 - **Authentication**: Session-based, bcrypt password hashing
@@ -53,7 +38,7 @@ A modern, full-featured web trading platform for simulated stock trading, portfo
 
 ## 📁 Project Structure
 
-```
+StockVault/```
 TradePro/
 ├── app.js                  # Main application file
 ├── db.js                   # Database connection
