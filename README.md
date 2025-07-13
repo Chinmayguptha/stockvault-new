@@ -1,45 +1,61 @@
-# StockVault 
+# 📈 StockVault
 
-A modern, full-featured web trading platform for simulated stock trading, portfolio management, and financial learning. StockVault offers a beautiful, responsive UI, robust user/admin flows, and innovative features for both beginners and advanced users.
-
----
-
-## 🚀 Features
-
-- **User & Admin Authentication**: Secure login, registration, and admin access with session management.
-- **Modern Dashboard**: Realistic, visually appealing dashboard with portfolio summary, top performers, and personalized greeting/tips.
-- **Trading Glossary**: Built-in glossary modal for trading terms and concepts.
-- **Stock Market Simulation**: Browse, search, and trade stocks with real-time price updates.
-- **Portfolio Management**: Track holdings, profit/loss, and performance at a glance.
-- **Wallet**: Deposit/withdraw funds, view balance, and manage transactions.
-- **Transaction History**: Full record of all trades, deposits, and withdrawals.
-- **Profile Management**: Update profile info and upload a profile picture.
-- **Admin Panel**: Manage users, stocks, and platform data with a dedicated admin dashboard.
-- **Responsive Design**: Works beautifully on desktop and mobile.
-- **UI/UX Enhancements**: Clean navigation, modern cards, modals, tooltips, and animated login page.
+**StockVault** is a modern, full-featured web application designed for simulated stock trading, portfolio management, and financial education. It provides an intuitive and responsive user interface along with powerful tools tailored for both beginner investors and experienced traders.
 
 ---
 
+## 🚀 Key Features
 
+- **User & Admin Authentication**  
+  Secure registration, login, and session-based authentication with bcrypt password hashing.
 
+- **Intuitive Dashboard**  
+  Personalized user dashboard with portfolio summary, top performers, and motivational trading tips.
+
+- **Stock Market Simulation**  
+  Simulate stock trading with real-time price updates, search, and trading functionality.
+
+- **Portfolio Management**  
+  Track your holdings, profit/loss, and performance at a glance.
+
+- **Integrated Wallet**  
+  Deposit, withdraw, and view balances with complete transaction management.
+
+- **Transaction History**  
+  View a full log of all stock trades, deposits, and withdrawals.
+
+- **Trading Glossary**  
+  Built-in modal-based glossary for quick reference of trading terms and concepts.
+
+- **Profile Management**  
+  Update personal details and upload a profile picture.
+
+- **Admin Panel**  
+  A dedicated admin dashboard to manage users, stock data, and platform activity.
+
+- **Responsive UI**  
+  Seamlessly works across desktop, tablet, and mobile devices.
+
+- **Polished UX Design**  
+  Includes modals, animated login screens, tooltips, clean navigation, and modern UI components.
 
 ---
 
 ## 🛠️ Technology Stack
 
-- **Frontend**: HTML, CSS , JavaScript, EJS templates
-- **Backend**: Node.js, Express.js
-- **Database**: MySQL (schema in `db/schema.sql`)
-- **Authentication**: Session-based, bcrypt password hashing
-- **File Uploads**: Multer (for profile pictures)
-- **UI Libraries**: FontAwesome, Chart.js
+- **Frontend**: HTML, CSS, JavaScript, EJS Templates  
+- **Backend**: Node.js, Express.js  
+- **Database**: MySQL (schemas in `db/schema.sql`)  
+- **Authentication**: Session-based with `bcrypt` for password hashing  
+- **File Uploads**: Handled using Multer (profile pictures)  
+- **Libraries**: FontAwesome, Chart.js  
 
 ---
 
 ## 📁 Project Structure
 
-StockVault/```
-TradePro/
+```
+StockVault/
 ├── app.js                  # Main application file
 ├── db.js                   # Database connection
 ├── db/                     # SQL schema and setup scripts
@@ -62,15 +78,15 @@ TradePro/
 ├── views/                  # EJS templates
 │   ├── admin/              # Admin panel views
 │   ├── auth/               # Login/register
-│   ├── layouts/            # Layouts
+│   ├── layouts/            # Master layouts
 │   ├── partials/           # Header/footer
 │   ├── portfolio/
 │   ├── profile/
 │   ├── stocks/
 │   ├── transactions/
 │   └── wallet/
-├── package.json            # Dependencies & scripts
-└── README.md
+├── package.json            # Project dependencies and scripts
+└── README.md               # Project documentation
 ```
 
 ---
@@ -78,8 +94,8 @@ TradePro/
 ## ⚙️ Setup & Installation
 
 ### Prerequisites
-- Node.js (v14+ recommended)
-- MySQL (v5.7+)
+- Node.js (v14 or higher)
+- MySQL (v5.7 or higher)
 
 ### 1. Clone the Repository
 ```bash
@@ -92,8 +108,9 @@ cd TradePro
 npm install
 ```
 
-### 3. Configure Environment Variables
-Create a `.env` file in the root:
+### 3. Configure Environment Variables  
+Create a `.env` file in the root directory:
+
 ```
 DB_HOST=localhost
 DB_USER=root
@@ -104,8 +121,8 @@ PORT=3000
 ```
 
 ### 4. Set Up the Database
-- Create a MySQL database named `trading_new`.
-- Run the SQL in `db/schema.sql` to create tables and sample data.
+- Create a MySQL database named `trading_new`
+- Execute the SQL script in `db/schema.sql` to set up the tables and seed data.
 
 ### 5. Create Uploads Directory
 ```bash
@@ -116,26 +133,33 @@ mkdir -p public/uploads/profile
 ```bash
 npm start
 ```
+
 Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 👤 User & Admin Flows
+## 👥 User & Admin Workflows
 
-- **User:** Register → Login → Dashboard → Trade stocks, manage portfolio, wallet, and profile.
-- **Admin:** Use the "Test Admin Login" button on the login page to access the admin dashboard and manage users/stocks.
+- **User Flow**  
+  Register → Login → Access Dashboard → Trade Stocks → Manage Portfolio, Wallet, and Profile.
 
----
-
-## 💡 Notable UI/UX Features
-- Animated login page with user/admin tabs (admin via separate button)
-- Personalized dashboard greeting and random trading tips
-- Trading glossary modal for beginners
-- Clean, modern navigation and footer
-- All links and buttons contextually shown/hidden based on user/admin status
-- No broken or placeholder links—everything is either functional or clearly described
+- **Admin Flow**  
+  Click “Test Admin Login” on the login screen to enter the admin dashboard and manage users and stock listings.
 
 ---
 
-## 📝 License
-This project is for educational/demo purposes. Feel free to use, modify, or extend it for your own learning or non-commercial projects. 
+## 💡 UX Highlights
+
+- Animated login screen with tabs for User/Admin access  
+- Personalized dashboard greetings and random trading tips  
+- In-app trading glossary for learning terms  
+- Responsive layout with mobile-first design  
+- Context-aware UI: shows/hides links and buttons based on user role  
+- Fully functional—no broken or placeholder elements
+
+---
+
+## 📄 License
+
+This project is intended for educational and demo purposes only.  
+You’re welcome to use, modify, or extend it for personal learning or non-commercial use.
